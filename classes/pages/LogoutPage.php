@@ -6,7 +6,7 @@ class LogoutPage extends AbstractPage {
         $this->setTitle('Log Out');
         UtilsRepository::logout();
         $this->refreshStatus();
-        RenderingService::render("logout.php");
+        RenderingService::render("LogoutPageTemplate.php");
     }
 
 }
